@@ -1,3 +1,5 @@
+/* utilisée pour la page d'accueil */
+
 body {
 	min-height: 100vh;
 }
@@ -88,10 +90,22 @@ main .subby p a {
 
 @media only screen and (max-width: 600px) {
 	.domme {
-		grid-template-columns: 35% auto;
-		grid-template-rows: auto auto auto auto;
-		grid-row-gap: .5em;
+		grid-template-columns: auto;
+		grid-template-rows: auto 12em auto 12em auto 12em auto;
+		grid-row-gap: 1.5em;
 		padding: 1em 1.5em;
+	}
+
+	.bratty-sub {
+		grid-column: initial;
+	}
+
+	.domme .category {
+		padding:  0 4em;
+	}
+
+	.category h2 {
+		font-size: x-large;
 	}
 }
 
@@ -113,10 +127,18 @@ main .subby p a {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+	.domme {
+		grid-template-columns: 20em 23em;
+		grid-column-gap: 3em;
+	}
+
+	.bratty-sub {
+		padding: 0 2em;
+	}
 	
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/*@media only screen and (min-width: 1200px) {
 	
-} 
+} */

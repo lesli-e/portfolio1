@@ -13,11 +13,18 @@
 		{% when "display" %}
 			<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/styles/{{ page.categories }}.css">
 		{% when "post" %}
-			{% unless page.categories[0] == "experimenter" %}
-				<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/styles/article.css">
-			{% else %}
-				<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/styles/post-exp.css">
-			{% endunless %}
+			{% case page.categories[0] %}
+				{% when "experimenter" %}
+					<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/styles/post-exp.css">
+				{% when "jouer" %}
+					<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/styles/article.css">
+					<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/styles/bg-jouer.css">
+				{% when "concevoir" %}
+					<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/styles/article.css">
+					<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/styles/bg-concevoir.css">
+				{% else %}
+					<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/styles/article.css">
+			{% endcase %}
 	{% endcase %}
 
 	{% if page.categories contains "footer" %}

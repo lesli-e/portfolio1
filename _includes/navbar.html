@@ -7,7 +7,13 @@
 			{% when "display" %}
 				<h1>{{ page.title }}</h1>
 			{% when "post" %}
-				<h1><a href="{{ site.baseurl }}/{{ page.categories[0] }}">{{ page.categories[0] | capitalize }}</a></h1>
+				<h1><a href="{{ site.baseurl }}/{{ page.categories[0] }}">
+					{% if page.categories[0] == "experimenter" %}
+						Expérimenter
+					{% else %}
+						{{ page.categories[0] | capitalize }}
+					{% endif %}
+				</a></h1>
 		{% endcase %}
 	</div>
 	<div class="nav-elem cat-nav">

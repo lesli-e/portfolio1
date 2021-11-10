@@ -1,18 +1,12 @@
-/*
- *	LAYOUT : DISPLAY
- */
+/* utilisée pour la page "jouer" */
  
 main {
 	background: url("../graphics/motif-5-m70-mirrored.png") 5% center repeat-y,
 				url("../graphics/motif-5-m50.png") 12% 10% / 100px repeat-y,
 				url("../graphics/motif-5-m70-mirrored.png") 88% 13% / 100px repeat-y;
-	/*background: url('../graphics/visuel-3_m50.png') top center repeat-y;*/
 }
 
 .col-2 {
-	/*display: grid;
-	grid-template-columns: auto auto auto;
-	grid-template-rows: minmax(25em, auto);*/
 	justify-items: center;
 	display: flex;
 	flex-flow: row wrap;

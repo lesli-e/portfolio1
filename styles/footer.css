@@ -1,3 +1,5 @@
+/* Utilisée pour le footer du site */
+
 body {
 	min-height: 100vh;
 }
@@ -7,4 +9,14 @@ main {
 	max-width: 40em;
 	padding: 1em 2em;
 	min-height: calc(100vh - (var(--nlh) + var(--flh) + 2px + .6em + 2em ));
+}
+
+main p img {
+	max-width: 50%;
+	min-width: 35%;
+	display: block;
+}
+
+main a {
+	text-decoration: underline var(--red) .1em;
 }

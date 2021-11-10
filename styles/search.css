@@ -1,14 +1,25 @@
+/* utilisée pour la page du moteur de recherche par tag */
+
 body {
 	min-height: 100vh;
+
 }
 
 main {
-	margin: auto;
-	max-width: 40em;
-	padding: 2em;
-	padding-top: 1em;
+	--pad: calc((100vw - 40em)/2);
+	/*margin: auto;
+	max-width: 40em;*/
+	width: 100%;
+	padding: 1em var(--pad) 2em var(--pad);
 	box-sizing: border-box;
 	min-height: calc(100vh - (var(--nlh) + var(--flh) + 2px + .6em ));
+
+	background:
+		url('../graphics/shape-exp-07_m50.png') 90% / 85px repeat-y,
+		url("../graphics/motif-poire1-m50.png") 95% 0% repeat-y,
+		url("../graphics/motif-5-m70.png") 4% 10% / 100px repeat-y;
+
+
 }
 
 button {
@@ -32,4 +43,17 @@ button {
 
 .card a:hover {
 	text-decoration: underline var(--red) .1em;
+}
+
+@media only screen and (max-width: 768px) {
+	main {
+		padding: 1em 2em 2em 2em;
+		margin: auto;
+		max-width: 40em;
+	}
+
+	#articles-container {
+		background-color: #fffc;
+		padding: 1em;
+	}
 }

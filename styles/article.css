@@ -1,14 +1,11 @@
+/* Feuille de style utilisée pour les articles "jouer" et "concevoir" */
+
 body {
 	min-height: 100vh;
 }
 
 main {
-	/*padding: 2em 10em;*/
 	box-sizing: border-box;
-	background: url("../graphics/shape-jou-05-m100.png") 2% 0% / 10em repeat-y,
-				url("../graphics/shape-jou-05-m50.png") 18% 10% / 8em repeat-y,
-				url("../graphics/shape-jou-05-m50.png") 35% 32% / 10em repeat-y;
-	background-repeat: repeat-y;
 	min-height: calc(100vh - (var(--nlh) + var(--flh) + 2px + .6em ));
 }
 
@@ -32,6 +29,13 @@ article {
 
 	article .text {
 		max-width: 40%;
+	}
+
+	article p img {
+		max-width: 100%;
+		min-width: 35%;
+		margin: auto;
+		display: block;
 	}
 
 .img-container {

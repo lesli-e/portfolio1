@@ -1,13 +1,8 @@
-/*
- *	LAYOUT : DISPLAY
- */
+/* page "concevoir" */
 
 main {
 	padding: 2em 10em;
-	/*background: url("../graphics/shape-jou-05-m100.png") 2% center / 10em repeat-y,
-				url("../graphics/shape-jou-05-m50.png") 20% 10% repeat-y;
-	background-repeat: repeat-y;*/
-	background:/* url('/graphics/visuel-1_m50.png') 10% / 20% repeat-y,*/
+	background:/* url('../graphics/visuel-1_m50.png') 10% / 20% repeat-y,*/
 	url('../graphics/shape-exp-07_m50.png') 37% / 85px repeat-y,
 	url('../graphics/shape-exp-17_m25.png') 28% repeat-y,
 	url('../graphics/shape-exp-07_m50.png') 84% repeat-y;
